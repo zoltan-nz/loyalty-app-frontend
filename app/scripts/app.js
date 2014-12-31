@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name loyaltyAppApp
+ * @name app
  * @description
- * # loyaltyAppApp
+ * # app
  *
  * Main module of the application.
  */
 angular
-  .module('loyaltyAppApp', [
+  .module('app', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',

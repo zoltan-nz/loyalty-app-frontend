@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name loyaltyAppApp.controller:MainCtrl
+ * @name app.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the loyaltyAppApp
+ * Controller of the app
  */
 angular.module('loyaltyAppApp')
   .controller('MainCtrl', function ($scope) {
