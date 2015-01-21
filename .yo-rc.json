@@ -39,10 +39,16 @@
         "module": "ngRoute"
       },
       "ui": {
-        "name": "angular-material",
-        "version": "~0.5.1",
-        "key": "angular-material",
-        "module": "ngMaterial"
+        "name": "bootstrap-sass-official",
+        "version": "~3.3.1",
+        "key": "bootstrap",
+        "module": null
+      },
+      "bootstrapComponents": {
+        "name": "angular-bootstrap",
+        "version": "0.12.x",
+        "key": "ui-bootstrap",
+        "module": "ui.bootstrap"
       },
       "cssPreprocessor": {
         "key": "node-sass",
@@ -62,12 +68,6 @@
         "extension": "hbs",
         "module": "handlebars",
         "version": "~2.0.0"
-      },
-      "bootstrapComponents": {
-        "name": null,
-        "version": null,
-        "key": null,
-        "module": null
       },
       "foundationComponents": {
         "name": null,
