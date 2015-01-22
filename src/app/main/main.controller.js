@@ -1,7 +1,7 @@
 'use strict';
 /*jshint esnext: true */
 
-class MainCtrl {
+class MainController {
   constructor ($scope) {
     $scope.awesomeThings = [
       {
@@ -84,6 +84,6 @@ class MainCtrl {
   }
 }
 
-MainCtrl.$inject = ['$scope'];
+MainController.$inject = ['$scope'];
 
-export default MainCtrl;
+export default MainController;
