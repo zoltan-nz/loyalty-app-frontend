@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('loyaltyAppFrontendApp'));
+  beforeEach(module('gemStore'));
 
   var AboutCtrl,
     scope;

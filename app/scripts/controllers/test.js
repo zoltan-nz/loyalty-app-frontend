@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name loyaltyAppFrontendApp.controller:TestCtrl
+ * @name gemStore.controller:TestCtrl
  * @description
  * # TestCtrl
- * Controller of the loyaltyAppFrontendApp
+ * Controller of the gemStore
  */
-angular.module('loyaltyAppFrontendApp')
+angular.module('gemStore')
   .controller('TestCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

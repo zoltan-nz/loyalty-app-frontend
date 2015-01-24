@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name loyaltyAppFrontendApp
+ * @name gemStore
  * @description
- * # loyaltyAppFrontendApp
+ * # gemStore
  *
  * Main module of the application.
  */
 angular
-  .module('loyaltyAppFrontendApp', [
+  .module('gemStore', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',

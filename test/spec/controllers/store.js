@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: StoreCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('gemStore'));
+  beforeEach(module('gemStoreApp'));
 
-  var MainCtrl,
+  var StoreCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    StoreCtrl = $controller('StoreCtrl', {
       $scope: scope
     });
   }));
