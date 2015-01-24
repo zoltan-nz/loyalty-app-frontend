@@ -15,15 +15,15 @@ var gems = [{
   canPurchase: true,
   soldOut: false,
   images: [
+    { full: '/images/gem-02.gif',
+      thumb: '/images/gem-02.gif'}
+    ],
+  reviews: [
     {
-      full: '/images/gem-02.gif',
-      thumb: '/images/gem-02.gif'
-    },
-    {
-      full: 'eeee-full.jpg',
-      thumb: 'eeee-thumb.jpg'
+      stars: 5,
+      body: 'I love this product!',
+      author: 'example@example.com'
     }
-
   ]
 },{
   name: 'Dodecahedron2',
