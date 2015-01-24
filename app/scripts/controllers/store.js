@@ -16,8 +16,8 @@ var gems = [{
   soldOut: false,
   images: [
     {
-      full: 'asdf-full.jpg',
-      thumb: 'asdf-thumb.jpg'
+      full: '/images/gem-02.gif',
+      thumb: '/images/gem-02.gif'
     },
     {
       full: 'eeee-full.jpg',
