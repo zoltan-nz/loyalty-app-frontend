@@ -32,18 +32,18 @@
             <blockquote>
               <b>Stars: {{review.stars}}</b>
               {{review.body}}
-              <cite>by: {{review.author}}</cite>
+              <cite>-{{review.author}} on {{review.createdOn | date}}</cite>
             </blockquote>
           </div>
 
-          <form name="reviewForm" class="form-horizontal" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+          <form name="reviewForm" class="form-horizontal" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
 
             <fieldset class="form-group form-group-lg">
               <label class="col-sm-2 control-label" for="starSelector">Rate:</label>
 
               <div class="col-sm-10">
                 <select id="starSelector" class="form-control input-lg" ng-model="reviewCtrl.review.stars"
-                        ng-options="stars for stars in [5, 4, 3, 2, 1]" title="Stars">
+                        ng-options="stars for stars in [5, 4, 3, 2, 1]" title="Stars" required>
                   <option value="">Rate the Product</option>
                 </select>
               </div>
@@ -52,7 +52,7 @@
               <label class="col-sm-2 control-label" for="opinion">Opinion:</label>
 
               <div class="col-sm-10">
-                <textarea id="opinion" class="form-control" rows="3" ng-model="reviewCtrl.review.body"></textarea>
+                <textarea id="opinion" class="form-control" rows="3" ng-model="reviewCtrl.review.body" required></textarea>
               </div>
             </div>
             <div class="form-group form-group-lg">
@@ -62,6 +62,10 @@
                 <input type="email" id="by" class="form-control input-lg" ng-model="reviewCtrl.review.author">
               </div>
             </div>
+            <div class="col sm-offset-2 col-sm-10">
+              reviewForm is {{reviewForm.$valid}}
+            </div>
+
             <div class="form-group form-group-lg">
               <div class="col-sm-offset-2 col-sm-10">
                 <input type="submit" value="Submit" class="btn btn-primary btn-lg"/>
