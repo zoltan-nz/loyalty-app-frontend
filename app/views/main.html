@@ -2,11 +2,7 @@
   <ul class="list-group">
     <li class="list-group-item" ng-repeat="product in store.products | orderBy:'name'">
 
-      <h3>
-        {{product.name}}
-        <em class="pull-right">{{product.price | currency}}</em>
-        <img ng-src="{{product.images[0].full}}"/>
-      </h3>
+      <product-title></product-title>
 
       <section ng-controller="PanelController as panel">
         <ul class="nav nav-pills">
