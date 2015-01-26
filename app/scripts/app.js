@@ -18,6 +18,12 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .constant('initUrl', '/')
+  .constant('baseHref', '/')
+  .value('$sniffer', { history: true })
+  .config(function($locationProvider) {
+    $locationProvider.html5Mode(true).hashPrefix('!');
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
